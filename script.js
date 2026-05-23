@@ -116,4 +116,51 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // ===== Oferta: rozwijane kategorie + podusługi =====
+    // Klik w nagłówek głównej kategorii rozwija/zwija jej zawartość.
+    // Klik w podusługę rozwija jej szczegóły. W obrębie tej samej kategorii
+    // tylko jedna podusługa może być otwarta na raz.
+    const categoryHeaders = document.querySelectorAll('.offer-category-header');
+    categoryHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            const category = this.closest('.offer-category');
+            if (!category) return;
+            const willOpen = !category.classList.contains('is-open');
+            category.classList.toggle('is-open', willOpen);
+            this.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+            // Zamknij podusługi przy zwijaniu kategorii — bez nagłych skoków po ponownym otwarciu
+            if (!willOpen) {
+                category.querySelectorAll('.offer-item.is-open').forEach(item => {
+                    item.classList.remove('is-open');
+                    const btn = item.querySelector('.offer-item-header');
+                    if (btn) btn.setAttribute('aria-expanded', 'false');
+                });
+            }
+        });
+    });
+
+    const itemHeaders = document.querySelectorAll('.offer-item-header');
+    itemHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            const item = this.closest('.offer-item');
+            if (!item) return;
+            const category = item.closest('.offer-category');
+            const willOpen = !item.classList.contains('is-open');
+
+            // Zamknij rodzeństwo (tylko jedna otwarta podusługa na kategorię)
+            if (category) {
+                category.querySelectorAll('.offer-item.is-open').forEach(sibling => {
+                    if (sibling !== item) {
+                        sibling.classList.remove('is-open');
+                        const sBtn = sibling.querySelector('.offer-item-header');
+                        if (sBtn) sBtn.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            }
+
+            item.classList.toggle('is-open', willOpen);
+            this.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+        });
+    });
 });

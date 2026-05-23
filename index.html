@@ -10,262 +10,592 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <!-- Header -->
-        <header class="header">
-            <div class="container">
-                <div class="header-left">
-                    <a href="#hero" >
-                        <div class="logo">
-                            <img src="images/logo.svg" alt="4 Łapy Centrum Logo" />
-                        </div>
-                    </a>
-                    <div class="social-icons">
-                        <a href="https://youtube.com" target="_blank" aria-label="YouTube">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                            </svg>
-                        </a>
-                        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                        </a>
-                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </a>
-                        <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
-                            </svg>
-                        </a>
-                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                        </a>
-                        <a href="mailto:contact@testemail.com" aria-label="Email">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                            </svg>
-                        </a>
+<main>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-left">
+                <a href="#hero">
+                    <div class="logo">
+                        <img src="images/logo.svg" alt="4 Łapy Centrum Logo"/>
                     </div>
-                </div>
-                <nav class="header-nav">
-                    <a href="#o-mnie" class="nav-link">O mnie</a>
-                    <a href="kwalifikacje.html" class="nav-link">Kwalifikacje</a>
-                    <a href="#uslugi" class="nav-link">Usługi</a>
-                    <a href="form.html" class="nav-link">Zapisz się</a>
-                    <a href="#faq" class="nav-link">FAQ+Regulamin</a>
-                </nav>
-                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                    </svg>
-                </button>
-            </div>
-            <nav class="mobile-nav">
-                <a href="#o-mnie" class="nav-link">O mnie</a>
-                <a href="#uslugi" class="nav-link">Usługi</a>
-                <a href="form.html" class="nav-link">Zapisz się</a>
-                <a href="#faq" class="nav-link">FAQ+Regulamin</a>
-            </nav>
-        </header>
-
-        <!-- Hero Section -->
-        <section id="hero" class="hero" style="background-image: url('images/hero-section.jpg');">
-            <div class="hero-overlay">
-                <div class="hero-content">
-                    <h1>Cześć, miło Cię widzieć</h1>
-                    <h2>Twój pies zasługuje na najlepszą opiekę, zrozumienie i wsparcie</h2>
-                    <a href="#o-mnie" class="cta-button">Poznaj mnie! 🐾</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="o-mnie" class="about">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h2>O mnie</h2>
-                        <p>Jestem certyfikowanym dogoterapeutą oraz trenerem psów, a praca ze zwierzętami to moja prawdziwa pasja.</p>
-                        <p>Zajmuję się również petsittingiem czyli troskliwą opieką, spacerami i wspólną zabawą z psem, kiedy Ty jesteś w pracy lub wyjeżdżasz.</p>
-                        <p>Moje wsparcie psów opiera się na pozytywnych metodach treningowych, empatii, zrozumieniu i budowaniu relacji opartej na zaufaniu. Pracuję zarówno z  psami dorosłymi, szczeniętami, czworonogami rasowymi, jak i adoptowanymi, często po trudnych doświadczeniach i z bagażem niekoniecznie dobrych wspomnień i nawyków.</p>
-                        <p>Zajmuję się także dogoterapią dla dzieci, seniorów oraz osób z niepełnosprawnościami.</p>
-                        <p>Prywatnie jestem dumną opiekunką dwóch bokserów. Starsza Dina to ta, od której wszystko się zaczęło – to ona otworzyła przede mną drzwi do psiego świata i rozpaliła we mnie pasję, która stała się moją ścieżką zawodową. Młodsza Zoya każdego dnia przypomina mi, że nie ma dwóch takich samych psów, a każde zwierzę zasługuje na indywidualne podejście, zrozumienie i troskę.</p>
-                    </div>
-                    <div class="about-image">
-                        <img src="images/about-me.jpg" alt="Pieski" />
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="uslugi" class="services">
-            <div class="container">
-                <h2>Oferta</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <h3>Szkolenia indywidualne</h3>
-                        <p>Personalizowane treningi dostosowane do potrzeb Twojego psa.</p>
-                        <ul>
-                            <li>Podstawowe komendy</li>
-                            <li>Socjalizacja</li>
-                            <li>Trening na smyczy</li>
-                        </ul>
-                        <div class="price">Od 120 PLN/sesja</div>
-                    </div>
-                    <div class="service-card">
-                        <h3>Pet sitting</h3>
-                        <p>Profesjonalna opieka nad Twoim psem w czasie Twojej nieobecności.</p>
-                        <ul>
-                            <li>Spacery</li>
-                            <li>Karmienie</li>
-                            <li>Zabawa i towarzystwo</li>
-                        </ul>
-                        <div class="price">Od 50 PLN/dzień</div>
-                    </div>
-                    <div class="service-card">
-                        <h3>Dogoterapia</h3>
-                        <p>Indywidualne sesje pomagające rozwiązać problemy behawioralne Twojego psa.</p>
-                        <ul>
-                            <li>Analiza zachowania</li>
-                            <li>Plan treningowy</li>
-                            <li>Wsparcie przez telefon</li>
-                        </ul>
-                        <div class="price">Od 150 PLN</div>
-                    </div>
-
-                </div>
-                <div class="travel-info">
-                    <p><strong>Możliwy dojazd do klienta poza Krakowem</strong></p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Registration Section -->
-<!--        <section id="zapisz-sie" class="registration">-->
-<!--            <div class="container">-->
-<!--                <h2>Zapisz się na konsultację</h2>-->
-<!--                <p>Masz pytania?</p>-->
-<!--                <div class="contact-options">-->
-<!--                    <a href="tel:+48123456789" class="contact-button">-->
-<!--                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">-->
-<!--                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>-->
-<!--                        </svg>-->
-<!--                        Zadzwoń: +48 123 456 789-->
-<!--                    </a>-->
-<!--                    <a href="mailto:test@testemail.com" class="contact-button">-->
-<!--                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">-->
-<!--                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>-->
-<!--                        </svg>-->
-<!--                        Email: test@testemail.com-->
-<!--                    </a>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </section>-->
-
-        <!-- Contact Section -->
-        <section class="contact" style="background-image: url('https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080');">
-            <div class="contact-overlay">
-                <div class="container">
-                    <h2>Kontakt</h2>
-                    <p>Masz pytania?</p>
-                    <div class="contact-icons">
-                        <a href="mailto:test@testemail.com" class="contact-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                            </svg>
-                        </a>
-                        <a href="tel:+48123456789" class="contact-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                            </svg>
-                        </a>
-                    </div>
-                    <p>Chcesz zacząć współpracę?</p>
-                    <a href="form.html" class="form-button">Wypełnij formularz</a>
-                    <p class="contact-footer">Odezwę się i ustalimy szczegóły!</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section id="faq" class="faq">
-            <div class="container">
-                <h2>FAQ + Regulamin</h2>
-                <div class="faq-content">
-                    <div class="faq-item">
-                        <h3>Jak długo trwa jedna sesja treningowa?</h3>
-                        <p>Standardowa sesja trwa 60 minut. W przypadku pierwszej konsultacji może potrwać do 90 minut.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>Czy pracujesz z agresywnymi psami?</h3>
-                        <p>Tak, specjalizuję się w pracy z psami wykazującymi problemy behawioralne, w tym agresję. Każdy przypadek jest indywidualnie oceniany.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>Jakie metody treningowe stosujesz?</h3>
-                        <p>Używam wyłącznie pozytywnych metod treningowych opartych na wzmocnieniu pozytywnym i budowaniu zaufania.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>Regulamin usług</h3>
-                        <p>Odwołanie wizyty możliwe do 24h przed terminem. Opłata za dojazd naliczana zgodnie z cennikiem. Wszystkie usługi objęte są gwarancją satysfakcji.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
-                    </svg>
-                </button>
-                <div class="footer-social">
-                    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                </a>
+                <div class="social-icons">
+                    <a href="https://facebook.com/61588559346102/" target="_blank" aria-label="Facebook">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                         </svg>
                     </a>
-                    <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
+                    <a href="mailto:4lapycentrum.kontakt@gmail.com" aria-label="Email">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
-                        </svg>
-                    </a>
-                    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                        </svg>
-                    </a>
-                    <a href="https://youtube.com" target="_blank" aria-label="YouTube">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                        </svg>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                         </svg>
                     </a>
                 </div>
-                <div class="footer-links">
-                    <a href="#faq">RODO</a>
-                    <a href="#faq">Regulamin szkoleń</a>
-                </div>
-<!--                <div class="footer-copyright">-->
-<!--                    <p>© 2025 - Powered by dogs love</p>-->
-<!--                    <p>Corgi Software & Dama z Łagunciem</p>-->
-<!--                </div>-->
             </div>
-        </footer>
-    </main>
+            <nav class="header-nav">
+                <a href="#o-mnie" class="nav-link">O mnie</a>
+                <a href="#uslugi" class="nav-link">Oferta</a>
+                <a href="https://forms.gle/Q2MAqiukp16ZJ6yF9" class="nav-link" target="_blank">Formularz</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="regulamin.html" class="nav-link">Regulamin</a>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <a href="#o-mnie" class="nav-link">O mnie</a>
+            <a href="#uslugi" class="nav-link">Oferta</a>
+            <a href="https://forms.gle/Q2MAqiukp16ZJ6yF9" class="nav-link" target="_blank">Formularz</a>
+            <a href="#faq" class="nav-link">FAQ</a>
+            <a href="regulamin.html" class="nav-link">Regulamin</a>
+        </nav>
+    </header>
 
-    <script src="script.js"></script>
+    <!-- Hero Section -->
+    <section id="hero" class="hero" style="background-image: url('images/hero-section.jpg');">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Cześć, miło Cię widzieć</h1>
+                <h2>Twój pies zasługuje na najlepszą opiekę, zrozumienie i wsparcie</h2>
+                <a href="#o-mnie" class="cta-button">Poznaj mnie! 🐾</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="o-mnie" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>O mnie</h2>
+                    <p>Jestem certyfikowanym dogoterapeutą oraz trenerem psów, a praca ze zwierzętami to moja prawdziwa
+                        pasja.</p>
+                    <p>Zajmuję się również petsittingiem czyli troskliwą opieką, spacerami i wspólną zabawą z psem,
+                        kiedy Ty jesteś w pracy lub wyjeżdżasz.</p>
+                    <p>Moje wsparcie psów opiera się na pozytywnych metodach treningowych, empatii, zrozumieniu i
+                        budowaniu relacji opartej na zaufaniu. Pracuję zarówno z psami dorosłymi, szczeniętami,
+                        czworonogami rasowymi, jak i adoptowanymi, często po trudnych doświadczeniach i z bagażem
+                        niekoniecznie dobrych wspomnień i nawyków.</p>
+                    <p>Zajmuję się także dogoterapią dla dzieci, seniorów oraz osób z niepełnosprawnościami.</p>
+                    <p>Prywatnie jestem dumną opiekunką dwóch bokserów. Starsza Dina to ta, od której wszystko się
+                        zaczęło – to ona otworzyła przede mną drzwi do psiego świata i rozpaliła we mnie pasję, która
+                        stała się moją ścieżką zawodową. Młodsza Zoya każdego dnia przypomina mi, że nie ma dwóch takich
+                        samych psów, a każde zwierzę zasługuje na indywidualne podejście, zrozumienie i troskę.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/about-me.jpg" alt="Pieski"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="uslugi" class="services">
+        <div class="container">
+            <h2>Oferta</h2>
+            <p class="services-intro">Wybierz kategorię, aby zobaczyć dostępne usługi.</p>
+
+            <div class="offer-list">
+
+                <!-- Category 1: Szkolenia indywidualne -->
+                <article class="offer-category" data-category="szkolenia">
+                    <button class="offer-category-header" type="button" aria-expanded="false">
+                        <span class="offer-category-index">01</span>
+                        <span class="offer-category-titles">
+                                <span class="offer-category-title">Szkolenia indywidualne</span>
+                                <span class="offer-category-subtitle">Trening dopasowany do Ciebie i Twojego psa</span>
+                            </span>
+                        <span class="offer-category-meta">2 warianty</span>
+                        <span class="offer-category-chevron" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                     stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline
+                                        points="6 9 12 15 18 9"></polyline></svg>
+                            </span>
+                    </button>
+                    <div class="offer-category-body">
+                        <div class="offer-category-inner">
+
+                            <!-- 1.1 Trening podstaw -->
+                            <article class="offer-item">
+                                <button class="offer-item-header" type="button" aria-expanded="false">
+                                    <span class="offer-item-title">Trening podstaw</span>
+                                    <span class="offer-item-price-tag">od 120 zł</span>
+                                    <span class="offer-item-chevron" aria-hidden="true">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                                 stroke-linejoin="round"><polyline
+                                                    points="6 9 12 15 18 9"></polyline></svg>
+                                        </span>
+                                </button>
+                                <div class="offer-item-body">
+                                    <div class="offer-item-inner">
+                                        <div class="offer-detail-grid">
+                                            <div class="offer-detail-main">
+                                                <p>Spotkania dopasowane w 100% do Ciebie i Twojego pupila. Skupiamy się
+                                                    na budowaniu więzi, nauce posłuszeństwa i przygotowaniu psa do życia
+                                                    w domu, w rodzinie i w przestrzeni miejskiej.</p>
+                                                <p>Ty poznasz skuteczne sposoby motywowania i nagradzania, a Twój pies –
+                                                    z radością będzie wykonywał Twoje polecenia.</p>
+                                                <p class="offer-note">Na zajęcia zapraszam psy, które ukończyły 6
+                                                    miesiąc życia.</p>
+
+                                                <h4 class="offer-section-heading">Zakres szkolenia</h4>
+                                                <ul class="offer-scope">
+                                                    <li>budowanie prawidłowej relacji z właścicielem</li>
+                                                    <li>wprowadzenie klikera jako narzędzia pomocnego do pracy z psem
+                                                    </li>
+                                                    <li>nauka podstawowych komend (kontakt wzrokowy, targetowanie, siad,
+                                                        leżeć, stój, zostań, dostawianie do nogi i chodzenie przy nodze,
+                                                        przywołanie, prawidłowa zabawa, zostaw/weź)
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <aside class="offer-detail-side">
+                                                <div class="offer-spec">
+                                                    <span class="offer-spec-label">Czas trwania</span>
+                                                    <span class="offer-spec-value">1 godzina</span>
+                                                </div>
+                                                <div class="offer-spec">
+                                                    <span class="offer-spec-label">Jedno spotkanie</span>
+                                                    <span class="offer-spec-value">120 zł</span>
+                                                </div>
+                                                <div class="offer-spec offer-spec-highlight">
+                                                    <span class="offer-spec-label">Pakiet 10 spotkań</span>
+                                                    <span class="offer-spec-value">1080 zł</span>
+                                                    <span class="offer-spec-hint">oszczędzasz 120 zł</span>
+                                                </div>
+                                                <a href="https://forms.gle/Q2MAqiukp16ZJ6yF9" class="offer-cta">Umów się 🐾</a>
+                                            </aside>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- 1.2 Trening zaawansowany -->
+                            <article class="offer-item">
+                                <button class="offer-item-header" type="button" aria-expanded="false">
+                                    <span class="offer-item-title">Trening zaawansowany</span>
+                                    <span class="offer-item-price-tag">od 130 zł</span>
+                                    <span class="offer-item-chevron" aria-hidden="true">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                                 stroke-linejoin="round"><polyline
+                                                    points="6 9 12 15 18 9"></polyline></svg>
+                                        </span>
+                                </button>
+                                <div class="offer-item-body">
+                                    <div class="offer-item-inner">
+                                        <div class="offer-detail-grid">
+                                            <div class="offer-detail-main">
+                                                <p>Dla psów i przewodników, którzy znają już podstawy i chcą podnieść
+                                                    poziom treningu. Skupiamy się na precyzji, wydłużaniu czasu i
+                                                    odległości wykonywania komend oraz pracy w trudnych dla psa
+                                                    rozproszeniach.</p>
+                                                <p>To również czas na wprowadzenie dodatkowych umiejętności, które
+                                                    chcesz wprowadzić swojemu psu. Nieustannie będziemy również pracować
+                                                    nad Twoją relacją i więzią z psem.</p>
+
+                                                <h4 class="offer-section-heading">Zakres szkolenia</h4>
+                                                <ul class="offer-scope">
+                                                    <li>poznawanie zaawansowanych technik wykorzystywanych w szkoleniu
+                                                        psów
+                                                    </li>
+                                                    <li>wzmacnianie precyzji w wykonywaniu podstawowych komend</li>
+                                                    <li>wydłużanie czasu w wykonywaniu podstawowych komend</li>
+                                                    <li>zwiększanie odległości opiekuna od psa w wykonywaniu
+                                                        podstawowych komend
+                                                    </li>
+                                                    <li>nauka zaproponowanych przez opiekuna komend</li>
+                                                    <li>zaawansowana praca w rozproszeniach (psy, ludzie, jedzenie,
+                                                        zabawki, dźwięki)
+                                                    </li>
+                                                    <li>nauka wyciszania psa (nauka odpoczywania i spokojnego
+                                                        zachowania)
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <aside class="offer-detail-side">
+                                                <div class="offer-spec">
+                                                    <span class="offer-spec-label">Czas trwania</span>
+                                                    <span class="offer-spec-value">1 godzina</span>
+                                                </div>
+                                                <div class="offer-spec">
+                                                    <span class="offer-spec-label">Jedno spotkanie</span>
+                                                    <span class="offer-spec-value">130 zł</span>
+                                                </div>
+                                                <div class="offer-spec offer-spec-highlight">
+                                                    <span class="offer-spec-label">Pakiet 10 spotkań</span>
+                                                    <span class="offer-spec-value">1170 zł</span>
+                                                    <span class="offer-spec-hint">oszczędzasz 130 zł</span>
+                                                </div>
+                                                <a href="https://forms.gle/Q2MAqiukp16ZJ6yF9" class="offer-cta">Umów się 🐾</a>
+                                            </aside>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Category 2: Petsitting -->
+                <article class="offer-category" data-category="petsitting">
+                    <button class="offer-category-header" type="button" aria-expanded="false">
+                        <span class="offer-category-index">02</span>
+                        <span class="offer-category-titles">
+                                <span class="offer-category-title">Opieka nad psem – petsitting</span>
+                                <span class="offer-category-subtitle">Indywidualna opieka w domu właściciela</span>
+                            </span>
+                        <span class="offer-category-meta">Kraków i okolice</span>
+                        <span class="offer-category-chevron" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                     stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline
+                                        points="6 9 12 15 18 9"></polyline></svg>
+                            </span>
+                    </button>
+                    <div class="offer-category-body">
+                        <div class="offer-category-inner">
+
+                            <!-- 2.1 Petsitting -->
+                            <article class="offer-item">
+                                <button class="offer-item-header" type="button" aria-expanded="false">
+                                    <span class="offer-item-title">Petsitting – opieka u Ciebie w domu</span>
+                                    <span class="offer-item-price-tag">od 40 zł</span>
+                                    <span class="offer-item-chevron" aria-hidden="true">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                                 stroke-linejoin="round"><polyline
+                                                    points="6 9 12 15 18 9"></polyline></svg>
+                                        </span>
+                                </button>
+                                <div class="offer-item-body">
+                                    <div class="offer-item-inner">
+                                        <div class="offer-detail-grid">
+                                            <div class="offer-detail-main">
+                                                <p>Nie każdy pies dobrze odnajduje się w hotelu dla zwierząt czy dużym
+                                                    skupisku obcych psów. Dlatego oferuję indywidualną opiekę nad
+                                                    pupilem w jego własnym domu lub w formie spacerów i wizyt
+                                                    domowych.</p>
+                                                <p>Podczas opieki dbam nie tylko o podstawowe potrzeby psa, ale przede
+                                                    wszystkim o jego komfort psychiczny, poczucie bezpieczeństwa i
+                                                    spokojną atmosferę. Każdego psa traktuję indywidualnie – dopasowując
+                                                    spacery, aktywności i sposób pracy do jego charakteru, wieku oraz
+                                                    potrzeb.</p>
+                                                <p>Dzięki wiedzy z zakresu komunikacji psów i szkolenia, potrafię
+                                                    uważnie obserwować emocje psa oraz odpowiednio reagować w
+                                                    trudniejszych sytuacjach. Szczególną uwagę zwracam na spokojne
+                                                    budowanie relacji i zaufania 🐾</p>
+
+                                                <h4 class="offer-section-heading">Zakres opieki</h4>
+                                                <ul class="offer-scope">
+                                                    <li>spacery indywidualne</li>
+                                                    <li>wizyty domowe</li>
+                                                    <li>opieka dzienna</li>
+                                                    <li>opieka nocna w domu właściciela</li>
+                                                    <li>karmienie i podawanie leków zgodnie z zaleceniami opiekuna</li>
+                                                    <li>zabawy węchowe i spokojne aktywności dostosowane do psa</li>
+                                                    <li>stały kontakt z właścicielem podczas opieki (zdjęcia i
+                                                        wiadomości)
+                                                    </li>
+                                                </ul>
+
+                                                <h4 class="offer-section-heading">Dla jakich psów?</h4>
+                                                <ul class="offer-tags">
+                                                    <li>szczeniaki</li>
+                                                    <li>psy dorosłe</li>
+                                                    <li>psi seniorzy</li>
+                                                    <li>psy wrażliwe emocjonalnie</li>
+                                                </ul>
+
+                                                <div class="offer-callout">
+                                                    <strong>Ważne informacje</strong>
+                                                    <ul>
+                                                        <li>Nie przyjmuję psów do swojego domu – opieka odbywa się w
+                                                            domu właściciela lub podczas spacerów.
+                                                        </li>
+                                                        <li>Przed pierwszą opieką obowiązuje spacer zapoznawczy lub
+                                                            spotkanie organizacyjne.
+                                                        </li>
+                                                        <li>Działam na terenie Krakowa i okolic.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <aside class="offer-detail-side">
+                                                <div class="offer-spec">
+                                                    <span class="offer-spec-label">Spacer indywidualny</span>
+                                                    <span class="offer-spec-value">od 40 zł</span>
+                                                </div>
+                                                <div class="offer-spec">
+                                                    <span class="offer-spec-label">Wizyta domowa dzienna</span>
+                                                    <span class="offer-spec-value">indywidualnie</span>
+                                                </div>
+                                                <div class="offer-spec">
+                                                    <span class="offer-spec-label">Opieka nocna</span>
+                                                    <span class="offer-spec-value">indywidualnie</span>
+                                                </div>
+                                                <a href="https://forms.gle/Q2MAqiukp16ZJ6yF9" class="offer-cta">Skontaktuj się 🐾</a>
+                                            </aside>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Category 3: Spacery socjalizacyjne -->
+                <article class="offer-category" data-category="spacery">
+                    <button class="offer-category-header" type="button" aria-expanded="false">
+                        <span class="offer-category-index">03</span>
+                        <span class="offer-category-titles">
+                                <span class="offer-category-title">Spacery socjalizacyjne</span>
+                                <span class="offer-category-subtitle">Praca z psem w naturalnym środowisku</span>
+                            </span>
+                        <span class="offer-category-meta">2 warianty</span>
+                        <span class="offer-category-chevron" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                     stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline
+                                        points="6 9 12 15 18 9"></polyline></svg>
+                            </span>
+                    </button>
+                    <div class="offer-category-body">
+                        <div class="offer-category-inner">
+
+                            <!-- 3.1 Spacery z trenerem -->
+                            <article class="offer-item">
+                                <button class="offer-item-header" type="button" aria-expanded="false">
+                                    <span class="offer-item-title">Spacer socjalizacyjny z trenerem</span>
+                                    <span class="offer-item-price-tag">od 80 zł</span>
+                                    <span class="offer-item-chevron" aria-hidden="true">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                                 stroke-linejoin="round"><polyline
+                                                    points="6 9 12 15 18 9"></polyline></svg>
+                                        </span>
+                                </button>
+                                <div class="offer-item-body">
+                                    <div class="offer-item-inner">
+                                        <div class="offer-detail-grid">
+                                            <div class="offer-detail-main">
+                                                <p>Spacer socjalizacyjny to spotkanie skierowane zarówno do psa, jak i
+                                                    jego opiekuna. Podczas spacerów uczymy się lepiej rozumieć psią
+                                                    komunikację, emocje oraz reakcje pojawiające się podczas codziennych
+                                                    sytuacji spacerowych.</p>
+                                                <p>Spotkania odbywają się w naturalnym środowisku – na osiedlach, w
+                                                    parkach oraz miejscach codziennych spacerów. Skupiamy się przede
+                                                    wszystkim na spokojnym funkcjonowaniu psa w otoczeniu innych psów,
+                                                    ludzi i rozproszeń.</p>
+
+                                                <h4 class="offer-section-heading">Podczas spacerów pracujemy nad</h4>
+                                                <ul class="offer-scope">
+                                                    <li>spokojnym mijaniem psów i ludzi</li>
+                                                    <li>budowaniem kontaktu psa z opiekunem</li>
+                                                    <li>nauką wcześniejszego reagowania na emocje psa</li>
+                                                    <li>lepszym rozumieniem psiej komunikacji</li>
+                                                    <li>regulacją emocji i wyciszeniem psa</li>
+                                                    <li>spokojnym funkcjonowaniem psa w codziennym środowisku</li>
+                                                </ul>
+                                                <p class="offer-note">Spacer socjalizacyjny to również przestrzeń do
+                                                    zadawania pytań i nauki świadomej pracy z własnym psem.</p>
+                                            </div>
+                                            <aside class="offer-detail-side">
+                                                <div class="offer-spec">
+                                                    <span class="offer-spec-label">Czas trwania</span>
+                                                    <span class="offer-spec-value">1 godzina</span>
+                                                </div>
+                                                <div class="offer-spec">
+                                                    <span class="offer-spec-label">Jedno spotkanie</span>
+                                                    <span class="offer-spec-value">80 zł</span>
+                                                </div>
+                                                <div class="offer-spec offer-spec-highlight">
+                                                    <span class="offer-spec-label">Pakiet 4 spotkań</span>
+                                                    <span class="offer-spec-value">280 zł</span>
+                                                    <span class="offer-spec-hint">oszczędzasz 40 zł</span>
+                                                </div>
+                                                <a href="https://forms.gle/Q2MAqiukp16ZJ6yF9" class="offer-cta">Umów się 🐾</a>
+                                            </aside>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- 3.2 Spacery z psem wspierającym -->
+                            <article class="offer-item">
+                                <button class="offer-item-header" type="button" aria-expanded="false">
+                                    <span class="offer-item-title">Spacer z psem wspierającym (Dina)</span>
+                                    <span class="offer-item-price-tag">od 100 zł</span>
+                                    <span class="offer-item-chevron" aria-hidden="true">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                                 stroke-linejoin="round"><polyline
+                                                    points="6 9 12 15 18 9"></polyline></svg>
+                                        </span>
+                                </button>
+                                <div class="offer-item-body">
+                                    <div class="offer-item-inner">
+                                        <div class="offer-detail-grid">
+                                            <div class="offer-detail-main">
+                                                <p>Spacer socjalizacyjny z udziałem mojej starszej bokserki Diny –
+                                                    spokojnej i stabilnej suczki, która pomaga innym psom budować
+                                                    pewność siebie oraz uczyć się prawidłowej komunikacji.</p>
+
+                                                <h4 class="offer-section-heading">Takie spotkania polecam psom</h4>
+                                                <ul class="offer-tags">
+                                                    <li>niepewnym</li>
+                                                    <li>nadmiernie pobudzonym</li>
+                                                    <li>młodym</li>
+                                                    <li>z trudnościami w kontakcie z innymi psami</li>
+                                                </ul>
+
+                                                <p>Podczas spaceru pies uczy się spokojnego funkcjonowania w obecności
+                                                    drugiego psa oraz budowania pozytywnych doświadczeń w kontrolowanych
+                                                    warunkach.</p>
+                                                <p>Dodatkowo opiekun poznaje psie sygnały komunikacyjne oraz uczy się
+                                                    odpowiednio reagować na emocje swojego psa. Dużą uwagę zwracam
+                                                    również na komfort i dobre samopoczucie obu psów podczas pracy.</p>
+                                            </div>
+                                            <aside class="offer-detail-side">
+                                                <div class="offer-spec">
+                                                    <span class="offer-spec-label">Czas trwania</span>
+                                                    <span class="offer-spec-value">1 godzina</span>
+                                                </div>
+                                                <div class="offer-spec">
+                                                    <span class="offer-spec-label">Jedno spotkanie</span>
+                                                    <span class="offer-spec-value">100 zł</span>
+                                                </div>
+                                                <div class="offer-spec offer-spec-highlight">
+                                                    <span class="offer-spec-label">Pakiet 4 spotkań</span>
+                                                    <span class="offer-spec-value">360 zł</span>
+                                                    <span class="offer-spec-hint">oszczędzasz 40 zł</span>
+                                                </div>
+                                                <a href="https://forms.gle/Q2MAqiukp16ZJ6yF9" class="offer-cta">Umów się 🐾</a>
+                                            </aside>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="travel-info">
+                <p><strong>Możliwy dojazd do klienta poza Krakowem - w tym przypadku doliczamy koszt dojazdu w wysokości 1,50 zł/km</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact"
+             style="background-image: url('images/contact-image.jpg');">
+        <div class="contact-overlay">
+            <div class="container">
+                <h2>Kontakt</h2>
+                <p>Masz pytania?</p>
+                <div class="contact-icons">
+                    <a href="mailto:4lapycentrum.kontakt@gmail.com" class="contact-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </a>
+                    <a href="tel:+48694947443" class="contact-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                    </a>
+                </div>
+                <p>Chcesz zacząć współpracę?</p>
+                <a href="https://forms.gle/Q2MAqiukp16ZJ6yF9" class="form-button" target="_blank">Wypełnij formularz</a>
+                <p class="contact-footer">Odezwę się i ustalimy szczegóły!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>FAQ</h2>
+            <div class="faq-content">
+                <div class="faq-item">
+                    <h3>Jak wygląda pierwsze spotkanie?</h3>
+                    <p>Pierwsze spotkanie to czas na poznanie psa, jego potrzeb oraz omówienie Waszych oczekiwań.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Czy mój pies musi znać podstawowe komendy?</h3>
+                    <p>Nie, treningi dopasowywane są indywidualnie do poziomu psa oraz opiekuna.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Czy pracujesz z psami lękowymi lub reaktywnymi?</h3>
+                    <p>Tak, jednak każda sytuacja wymaga wcześniejszego omówienia i indywidualnego podejścia.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Czy przyjmujesz psy do swojego domu?</h3>
+                    <p>Nie — opieka realizowana jest wyłącznie w domu właściciela lub w formie spacerów.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Jak przygotować się do treningu?</h3>
+                    <p>Na spotkanie warto zabrać:</p>
+                    <ul class="faq-list">
+                        <li>smaczki,</li>
+                        <li>ulubioną zabawkę psa,</li>
+                        <li>wygodne szelki lub obrożę,</li>
+                        <li>smycz 3–5 m (bez smyczy automatycznej),</li>
+                        <li>miskę na wodę lub butelkę, z której będzie pił pies.</li>
+                    </ul>
+                </div>
+                <div class="faq-item">
+                    <h3>Czy mogę uczestniczyć w spacerze socjalizacyjnym?</h3>
+                    <p>Tak, spacery socjalizacyjne skierowane są zarówno do psa, jak i jego opiekuna.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Jak wyglądają spacery socjalizacyjne z Diną?</h3>
+                    <p>To spokojne, kontrolowane spotkania z udziałem mojej starszej bokserki, która pomaga innym psom
+                        budować pewność siebie i uczyć się prawidłowej komunikacji.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Czy podczas opieki dostanę zdjęcia psa?</h3>
+                    <p>Oczywiście. Podczas opieki staram się być w kontakcie z właścicielem i przesyłać zdjęcia oraz
+                        krótkie informacje o pupilu.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Na jakim terenie działasz?</h3>
+                    <p>Działam głównie na terenie Krakowa i okolic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+                </svg>
+            </button>
+            <div class="footer-social">
+                <a href="https://facebook.com/61588559346102/" target="_blank" aria-label="Facebook">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer-links">
+                <a href="regulamin.html#rodo">RODO</a>
+                <a href="regulamin.html">Regulamin szkoleń</a>
+            </div>
+        </div>
+    </footer>
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
