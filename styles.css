@@ -162,6 +162,7 @@ body {
     display: flex;
     align-items: center;
     position: relative;
+    overflow: hidden; /* obetnij dziwactwa overlay width:120% */
 }
 
 .hero-overlay {
@@ -1661,12 +1662,50 @@ body {
         height: 50px;
     }
 
+    /* ===== Hero mobile fix ===== */
+    .hero {
+        /* Wyłącz fixed bg (skacze na iOS/Androidzie) */
+        background-attachment: scroll;
+        /* 100svh = małe okno bez paska adresu; bez skoków przy scrollu.
+           Fallback na 100vh dla starszych przeglądarek. */
+        height: auto;
+        min-height: 100vh;
+        min-height: 100svh;
+    }
+
+    .hero-overlay {
+        /* Pełna szerokość, treść wycentrowana — bez przesunięcia */
+        width: 100%;
+        margin-left: 0;
+        height: 100%;
+        padding: 6rem 1.5rem 3rem; /* górne wcięcie pod fixed header */
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
     .hero-content h1 {
         font-size: 2rem;
+        line-height: 1.2;
+        text-wrap: balance;
     }
 
     .hero-content h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        line-height: 1.4;
+        text-wrap: balance;
+    }
+
+    .cta-button {
+        align-self: center;
+        font-size: 1rem;
+        padding: 0.85rem 1.75rem;
     }
 
     .about-content {
@@ -1756,6 +1795,29 @@ body {
     .contact-method {
         width: 100%;
         justify-content: center;
+    }
+
+    /* Hero – jeszcze drobniejsza skala na bardzo małych telefonach */
+    .hero-overlay {
+        padding: 5.5rem 1.1rem 2.5rem;
+    }
+
+    .hero-content {
+        gap: 1.2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.65rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.15rem;
+        line-height: 1.45;
+    }
+
+    .cta-button {
+        font-size: 0.95rem;
+        padding: 0.75rem 1.5rem;
     }
 }
 
