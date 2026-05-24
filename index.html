@@ -38,7 +38,7 @@
                 <a href="#uslugi" class="nav-link">Oferta</a>
                 <a href="https://forms.gle/Q2MAqiukp16ZJ6yF9" class="nav-link" target="_blank">Formularz</a>
                 <a href="#faq" class="nav-link">FAQ</a>
-                <a href="regulamin.html" class="nav-link">Regulamin</a>
+            <a href="regulamin.html" class="nav-link">Regulamin</a>
             </nav>
             <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -522,8 +522,14 @@
     <!-- FAQ Section -->
     <section id="faq" class="faq">
         <div class="container">
-            <h2>FAQ</h2>
-            <div class="faq-content">
+            <div class="faq-toggle" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-content">
+                <h2>FAQ</h2>
+                <span class="faq-toggle-hint">Najczęściej zadawane pytania — kliknij, aby rozwinąć</span>
+                <svg class="faq-toggle-arrow" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+                </svg>
+            </div>
+            <div class="faq-content" id="faq-content">
                 <div class="faq-item">
                     <h3>Jak wygląda pierwsze spotkanie?</h3>
                     <p>Pierwsze spotkanie to czas na poznanie psa, jego potrzeb oraz omówienie Waszych oczekiwań.</p>

@@ -7,7 +7,12 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             const targetSection = document.querySelector(targetId);
-            
+
+            // Open FAQ content when its nav link is clicked
+            if (targetId === '#faq') {
+                openFaq();
+            }
+
             if (targetSection) {
                 targetSection.scrollIntoView({
                     behavior: 'smooth',
@@ -22,6 +27,41 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // ===== FAQ toggle =====
+    function openFaq() {
+        const toggle = document.querySelector('.faq-toggle');
+        const content = document.querySelector('#faq-content');
+        if (!toggle || !content) return;
+        content.classList.add('is-visible');
+        toggle.setAttribute('aria-expanded', 'true');
+    }
+
+    function toggleFaq() {
+        const toggle = document.querySelector('.faq-toggle');
+        const content = document.querySelector('#faq-content');
+        if (!toggle || !content) return;
+        const isOpen = content.classList.contains('is-visible');
+        content.classList.toggle('is-visible', !isOpen);
+        toggle.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+    }
+
+    const faqToggle = document.querySelector('.faq-toggle');
+    if (faqToggle) {
+        faqToggle.addEventListener('click', toggleFaq);
+        // Keyboard accessibility: Enter or Space triggers toggle
+        faqToggle.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleFaq();
+            }
+        });
+    }
+
+    // Open FAQ if the page was loaded with #faq in the URL
+    if (window.location.hash === '#faq') {
+        openFaq();
+    }
 
     // Mobile menu toggle functionality
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
